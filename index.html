@@ -9,9 +9,58 @@
 <body>
     <main>
         <form>
-            <article class="rubrik">
-                <h1>Pizza</h1>
-            </article>
+            <h1>Pizza</h1>
+            <section>
+                <article class="form-control">
+                    <label for="variat">Välj Pizza</label>
+                    <select class="variant">
+                        <option value="">1. Margherita</option>
+                        <option value="">2. Vesuvio</option>
+                        <option value="">3. Capriciosa</option>
+                        <option value="">4. Hawaii</option>
+                        <option value="">5. Mamma Mia</option>
+                        <option value="">6. Kebab Pizza</option>
+                        <option value="">7. Kyckling Pizza</option>
+                        <option value="">8. Kebab Rulle</option>
+                    </select>
+                </article>
+                <article class="form-control">
+                    <label for="ändring">Vill du göra några ändringar?</label>
+                    <textarea name="ändring" id="ändring" cols="30" rows="4" placeholder="kommentar"></textarea>
+                </article>
+                <article class="form-control">
+                    <label for="leverans">Hemleverans?</label>
+                    <section class="ja-nej">
+                        <div class="ja">
+                            <label for="leverans">Ja</label>
+                            <input type="radio" name="hemleverans" id="leverans">
+                        </div>
+                        <div class="nej">
+                            <label for="leverans">Nej</label>
+                            <input type="radio" name="hemleverans" id="leverans">
+                        </div>
+                    </section>
+                </article>
+            </section>
+            <section class="personalInfo">
+                <article class="förnamn">
+                    <label for="förnamn">Förnamn</label>
+                    <input type="text" name="förnamn" id="förnamn" placeholder="förnamn" required>
+                </article>
+                <article class="efternamn">
+                    <label for="efternamn">Efternamn</label>
+                    <input type="text" name="efternamn" id="efternamn" placeholder="efternamn" required>
+                </article>
+                <article class="telefon">
+                    <label for="telefon">Tel.</label>
+                    <input type="text" name="telefon" id="telefon" placeholder="+46" required>
+                </article>
+                <article class="adress">
+                    <label for="adress">Adress</label>
+                    <input type="text" name="adress" id="adress" placeholder="adress" required>
+                </article>
+            </section>
+            <button class="btn">Beställ</button>
         </form>
     </main>
 </body>
